@@ -21,10 +21,29 @@ main {
   justify-content: center;
   align-items: center;
 }
-.sidebar_main img {
+.sidebar_main .site-icon {
+  width: 10rem;
+  filter: invert(100);
+}
+.sidebar_main .profile-icon {
   width: 7.5rem;
+  margin: 1.25rem 0;
   border-radius: 100%;
   filter: saturate(125%);
+}
+.sidebar_main h1 {
+  line-height: 0;
+}
+.sidebar_main p {
+  color: #404344;
+  line-height: 0;
+}
+.sidebar hr {
+  height: 1px;
+  margin: 1.75rem 0;
+  background-color: #323435;
+  border: none;
+  border-radius: 2.5rem;
 }
 .sidebar_links {
   display: flex;
@@ -35,12 +54,17 @@ main {
 }
 .sidebar_links button {
   width: 15rem;
-  height: 2.5rem;
+  padding: 0.5rem;
   color: white;
   text-align: left;
   background-color: transparent;
   border: none;
   border-radius: 0.75rem;
+  transition: all 0.5s ease;
+}
+.sidebar_links button:hover {
+  padding: 1.25rem;
+  background-color: #323435;
 }
 
 nav {
