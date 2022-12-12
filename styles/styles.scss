@@ -3,7 +3,6 @@ CREDITS:
 Profile Pic by Adrian Design: https://theinspirationgrid.com/cute-3d-pop-culture-illustrations-by-adrian-design/
 */
 
-
 $sidebar: #1a1c1e;
 $sidebar-accent: #323435;
 $sidebar-accentlight: #404344;
@@ -18,6 +17,8 @@ main {
 }
 
 .sidebar {
+    display: grid;
+    grid-template-rows: 2fr 4fr 1fr;
     grid-row: 1 / 3;
     padding: 1.75rem;
     color: white;
@@ -52,7 +53,8 @@ main {
     }
 
     hr {
-        height: 1px;
+        width: 15rem;
+        height: 1.5px;
         margin: 1.75rem 0;
         background-color: $sidebar-accent;
         border: none;
@@ -62,9 +64,10 @@ main {
     &_links {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         gap: 1.5rem;
+        grid-row: 2 / 3;
 
         button {
             width: 15rem;
