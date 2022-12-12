@@ -1,0 +1,16 @@
+Header Nav Bar
+=> FIRST ROW <=
+- Search Bar
+- Notification Bell
+- Profile Icon
+- Username
+
+=> SECOND ROW <=
+- Profile Icon
+- Welcome Message
+- Action Buttons
+
+Sidebar
+- Site Title on Heading
+- Subsections
+
