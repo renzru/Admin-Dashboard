@@ -83,4 +83,63 @@ nav .nav_header input {
   background-color: #ececec;
   border: none;
   border-radius: 2.5rem;
+}
+
+.content {
+  display: grid;
+  grid-row: 0.25fr 1fr;
+  grid-template-columns: 4fr 1fr;
+  padding: 1.25rem 2.5rem;
+}
+.content h1 {
+  grid-row: 1/2;
+  font-size: 1.25rem;
+}
+
+.cards_container,
+.cards-side_container {
+  grid-row: 2/3;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  width: 18.5rem;
+  height: 12.5rem;
+  padding: 1.25rem 2.5rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+.cards h2 {
+  line-height: 0;
+}
+.cards p {
+  color: #757575;
+}
+
+.cards-side_container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.cards--announce {
+  grid-row: 1/2;
+  height: 18.5rem;
+}
+.cards--announce .announcement h2 {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.cards--announce .announcement p {
+  font-size: 0.85rem;
+}
+.cards--announce hr {
+  width: 100%;
+  height: 1.5px;
+  background-color: #ececec;
+  border: none;
+}
+
+.cards--trending {
+  grid-row: 2/3;
 }/*# sourceMappingURL=styles.css.map */
