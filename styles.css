@@ -1,0 +1,150 @@
+/*
+CREDITS:
+Search Icon: https://www.flaticon.com/free-icon/search_149852
+Dashboard Icon: https://www.flaticon.com/free-icon/dashboard_1828791
+Notification Bell: https://www.flaticon.com/free-icon/notification_633486
+Settings Icon: https://www.flaticon.com/free-icon/settings_3524659
+Profile Pic by Adrian Design: https://theinspirationgrid.com/cute-3d-pop-culture-illustrations-by-adrian-design/
+*/
+
+:root {
+  --mainGrey: #ececec;
+  --mainDarkGrey: #cccccc;
+  --mainText: #1e1e1e;
+  --mainTextLight: #757575;
+  --sidebarMain: #29282e;
+  --dropShadow: 0px 1px 0.5rem rgb(0, 0, 0, 0.15);
+}
+
+body {
+  display: grid;
+  grid-template-columns: 20rem 1fr 25rem;
+  grid-template-rows: 10rem 1fr;
+  grid-template-areas:
+    "s h h"
+    "s m a";
+  width: 100%;
+  height: 100vh;
+  background-color: #ececec;
+}
+
+/* Top Nav Bar */
+
+nav {
+  display: grid;
+  grid-area: h;
+  grid-template-rows: 1fr 1fr;
+}
+
+.nav_header {
+  display: grid;
+  grid-template-columns: 1fr 25rem;
+  align-items: center;
+  gap: 1.25rem;
+  background-color: white;
+  box-shadow: var(--dropShadow);
+}
+
+input[type="search"] {
+  width: 35rem;
+  height: 50%;
+  margin-left: 1.25rem;
+  padding: 0 1.25rem;
+  background-color: var(--mainGrey);
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.profile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1.25rem;
+}
+
+.nav-icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  opacity: 0.4;
+}
+
+.profile-pic {
+  width: 2.75rem;
+  height: 2.75rem;
+  object-fit: cover;
+  border-radius: 5rem;
+  filter: saturate(1.3);
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 0;
+}
+
+.profile-info h1 {
+  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+  color: var(--mainText);
+}
+
+.profile-info p {
+  font-size: 0.85rem;
+  color: var(--mainDarkGrey);
+}
+
+.main_header {
+  display: flex;
+  align-items: center;
+  margin: 0 1.25rem;
+  color: var(--mainTextLight);
+}
+
+.main_header h1 {
+  line-height: 0;
+  font-size: 1.5rem;
+}
+/* Sidebar */
+
+.sidebar {
+  grid-area: s;
+  background-color: var(--sidebarMain);
+}
+
+/* Main */
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-auto-rows: max-content;
+  gap: 1.25rem;
+  margin: 1.25rem;
+}
+
+.card {
+  display: grid;
+  padding: 1.75rem;
+  grid-template-rows: max-content 1fr max-content;
+  background-color: white;
+  border-radius: 1.25rem;
+}
+
+.card span {
+  margin: 1.25rem 0;
+  text-align: justify;
+}
+.card span h1 {
+  color: var(--mainText);
+  line-height: 0;
+}
+
+.card span p {
+  color: var(--mainTextLight);
+}
+.card img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
