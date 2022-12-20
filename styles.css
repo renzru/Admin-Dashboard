@@ -17,6 +17,8 @@ Profile Pic by Adrian Design: https://theinspirationgrid.com/cute-3d-pop-culture
   --mainText: #1e1e1e;
   --mainTextLight: #757575;
   --sidebarMain: #29282e;
+  --sidebarMainLight: #353535;
+  --sidebarTextInactive: #8b8b8b;
   --dropShadow: 0px 1px 0.5rem rgb(0, 0, 0, 0.15);
   --cardDropShadow: 0px 1px 0.25rem rgb(0, 0, 0, 0.15);
 }
@@ -113,8 +115,69 @@ input[type="search"] {
 /* Sidebar */
 
 .sidebar {
+  display: grid;
   grid-area: s;
+  grid-auto-rows: max-content;
+  justify-items: center;
+  padding: 1.25rem;
   background-color: var(--sidebarMain);
+}
+
+.sidebar > * {
+  width: 100%;
+}
+
+.sidebar-logo {
+  width: 100%;
+  height: 5rem;
+  object-fit: cover;
+  filter: invert(1);
+}
+
+.sidebar-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  height: 2.5rem;
+  padding-left: 1.25rem;
+  border-radius: 0.5rem;
+  transition: all 0.25s ease;
+}
+
+.sidebar-content > * {
+  transition: inherit;
+}
+
+.sidebar hr {
+  height: 0.1rem;
+  background-color: var(--sidebarMainLight);
+  border: none;
+}
+.sidebar-link {
+  color: var(--sidebarTextInactive);
+  text-decoration: none;
+}
+
+.sidebar-icon {
+  width: 1rem;
+  height: 1rem;
+  filter: invert(0.5);
+}
+
+.sidebar-content:hover {
+  background-color: var(--sidebarMainLight);
+}
+
+.sidebar-content:active {
+  transform: scale(1.025);
+}
+
+.sidebar-content:hover a {
+  color: white;
+}
+
+.sidebar-content:hover img {
+  filter: invert(1);
 }
 
 /* Main */
