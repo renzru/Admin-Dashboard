@@ -269,6 +269,6 @@ main {
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.025);
   box-shadow: 0 0 0.2rem #2f86ff;
 }
