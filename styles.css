@@ -89,18 +89,30 @@ input[type="search"] {
 .profile-info {
   display: flex;
   flex-direction: column;
-  line-height: 0;
 }
 
 .profile-info h1 {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.75rem;
   font-size: 1.25rem;
   color: var(--mainText);
+  line-height: 0;
 }
 
-.profile-info p {
-  font-size: 0.85rem;
+.profile-info a {
+  display: block;
+  font-size: 1rem;
+  font-weight: 300;
   color: var(--mainDarkGrey);
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+
+.profile-info a:hover {
+  color: #2f86ff;
+}
+
+.profile-info a:active {
+  transform: scale(1.05);
 }
 
 .main_header {
