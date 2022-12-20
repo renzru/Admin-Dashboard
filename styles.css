@@ -108,7 +108,8 @@ input[type="search"] {
 }
 
 .main_header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 25rem;
   align-items: center;
   margin: 0 1.25rem;
   color: var(--mainTextLight);
@@ -119,6 +120,10 @@ input[type="search"] {
   font-size: 1.25rem;
   font-weight: bold;
   line-height: 0;
+}
+
+.announce-header {
+  margin-left: 1.25rem;
 }
 /* Sidebar */
 
