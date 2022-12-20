@@ -1,13 +1,20 @@
 /*
-CREDITS:
+RESOURCE CREDITS:
+Dashboard Icon: https://www.flaticon.com/free-icon/dashboard_1828791
+Sidebar Profile Icon: https://www.flaticon.com/free-icon/profile-user_64572
+Sidebar Activity Icon: https://www.flaticon.com/free-icon/bar-chart_603066
+Sidebar Messages Icon: https://www.flaticon.com/free-icon/chatting_3721843
+Sidebar Settings Icon: https://www.flaticon.com/free-icon/settings_3524659
+Sidebar Tasks Icon: https://www.flaticon.com/free-icon/calendar_6463157
+Sidebar Support Icon: https://www.flaticon.com/free-icon/headphones_862909
+Sidebar Privacy Icon: https://www.flaticon.com/free-icon/privacy-policy_7358460
+New Project Button Icon: https://www.flaticon.com/free-icon/tab_7588919
 Card Star: https://www.flaticon.com/free-icon/star_3303088
 Card Share: https://www.flaticon.com/free-icon/share_1828956
 Card Dots: https://www.flaticon.com/free-icon/dots_2311524
 Search Icon: https://www.flaticon.com/free-icon/search_149852
-Dashboard Icon: https://www.flaticon.com/free-icon/dashboard_1828791
-Notification Bell: https://www.flaticon.com/free-icon/notification_633486
-Settings Icon: https://www.flaticon.com/free-icon/settings_3524659
-Profile Pic by Adrian Design: https://theinspirationgrid.com/cute-3d-pop-culture-illustrations-by-adrian-design/
+Top Nav Notification Bell: https://www.flaticon.com/free-icon/notification_633486
+LSP Profile Pic by Adrian Design: https://theinspirationgrid.com/cute-3d-pop-culture-illustrations-by-adrian-design/
 
 */
 
@@ -21,6 +28,7 @@ Profile Pic by Adrian Design: https://theinspirationgrid.com/cute-3d-pop-culture
   --sidebarTextInactive: #8b8b8b;
   --dropShadow: 0px 1px 0.5rem rgb(0, 0, 0, 0.15);
   --cardDropShadow: 0px 1px 0.25rem rgb(0, 0, 0, 0.15);
+  --hoverDropShadow: 0 0 0.2rem #4a8fb4;
 }
 
 body {
@@ -61,6 +69,11 @@ input[type="search"] {
   background-color: var(--mainGrey);
   border: none;
   border-radius: 0.5rem;
+  transition: all 0.25s ease;
+}
+
+input[type="search"]:focus {
+  outline: 1px solid #4a8fb4;
 }
 
 .profile {
@@ -122,6 +135,28 @@ input[type="search"] {
   line-height: 0;
 }
 
+.dashboard-header-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.dashboard-button {
+  width: 1.25rem;
+  height: 1.25rem;
+  opacity: 0.4;
+  transition: all 0.1s ease;
+}
+
+.dashboard-button:hover {
+  opacity: 0.8;
+}
+
+.dashboard-button:active {
+  transform: scale(1.075);
+  opacity: 0.95;
+}
+
 .announce-header {
   margin-left: 1.25rem;
 }
@@ -130,6 +165,7 @@ input[type="search"] {
   margin-top: 2.5rem;
   margin-bottom: 1.25rem;
 }
+
 /* Sidebar */
 
 .sidebar {
@@ -166,9 +202,9 @@ input[type="search"] {
   transition: inherit;
 }
 
-.sidebar hr {
+.sidebar-hr {
   height: 0.1rem;
-  margin: 0.75rem 0;
+  margin: 1.75rem 0;
   background-color: var(--sidebarMainLight);
   border: none;
 }
@@ -235,8 +271,8 @@ main {
 }
 
 .card-icon {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
   opacity: 0.5;
   transition: all 0.1s ease;
 }
@@ -312,7 +348,7 @@ main {
 
 .card:hover {
   transform: scale(1.025);
-  box-shadow: 0 0 0.2rem #2f86ff;
+  box-shadow: var(--hoverDropShadow);
 }
 
 .card-sidebar:hover {
