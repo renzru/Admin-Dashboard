@@ -12,7 +12,7 @@ Profile Pic by Adrian Design: https://theinspirationgrid.com/cute-3d-pop-culture
 */
 
 :root {
-  --mainGrey: #ececec;
+  --mainGrey: #f4f5f9;
   --mainDarkGrey: #cccccc;
   --mainText: #1e1e1e;
   --mainTextLight: #757575;
@@ -32,7 +32,7 @@ body {
     "s m a";
   width: 100%;
   height: 100vh;
-  background-color: #ececec;
+  background-color: var(--mainGrey);
   font-family: Roboto;
 }
 
@@ -105,14 +105,6 @@ input[type="search"] {
   color: var(--mainDarkGrey);
   text-decoration: none;
   transition: all 0.1s ease;
-}
-
-.profile-info a:hover {
-  color: #2f86ff;
-}
-
-.profile-info a:active {
-  transform: scale(1.05);
 }
 
 .main_header {
@@ -235,6 +227,7 @@ main {
   width: 1.5rem;
   height: 1.5rem;
   opacity: 0.5;
+  transition: all 0.1s ease;
 }
 
 /* Animations */
@@ -246,6 +239,15 @@ main {
 .nav-icon:active {
   transform: scale(1.05);
 }
+
+.profile-info a:hover {
+  color: #2f86ff;
+}
+
+.profile-info a:active {
+  transform: scale(1.025);
+}
+
 .sidebar-content:hover {
   background-color: var(--sidebarMainLight);
 }
@@ -258,8 +260,12 @@ main {
   color: white;
 }
 
-.sidebar-content:hover img {
-  filter: invert(1);
+.card-icon:hover {
+  opacity: 0.75;
+}
+
+.card-icon:active {
+  transform: scale(1.035);
 }
 
 .card:hover {
