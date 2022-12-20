@@ -115,7 +115,7 @@ input[type="search"] {
   color: var(--mainTextLight);
 }
 
-.main_header h1 {
+.header-text {
   color: var(--sidebarMainLight);
   font-size: 1.25rem;
   font-weight: bold;
@@ -124,6 +124,11 @@ input[type="search"] {
 
 .announce-header {
   margin-left: 1.25rem;
+}
+
+.trending-header {
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
 }
 /* Sidebar */
 
@@ -167,6 +172,7 @@ input[type="search"] {
   background-color: var(--sidebarMainLight);
   border: none;
 }
+
 .sidebar-link {
   color: var(--sidebarTextInactive);
   text-decoration: none;
@@ -235,6 +241,13 @@ main {
   transition: all 0.1s ease;
 }
 
+/* Main Sidebar */
+
+.main_sidebar {
+  display: grid;
+  grid-auto-rows: max-content;
+  gap: 1rem;
+}
 /* Animations */
 
 .nav-icon:hover {
