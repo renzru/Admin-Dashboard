@@ -96,6 +96,7 @@ input[type="search"]:focus {
   justify-content: flex-end;
   align-items: center;
   gap: 1rem;
+  margin-right: 2.5rem;
   padding: 0 1.25rem;
 }
 
@@ -322,6 +323,12 @@ main {
   height: 1px;
   border: none;
   background-color: var(--mainDarkGrey);
+}
+
+span[class="trending"] {
+  display: flex;
+  gap: 1rem;
+  margin: 0.75rem;
 }
 
 /* Animations */
