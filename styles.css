@@ -250,6 +250,28 @@ main {
   gap: 1rem;
 }
 
+.card-sidebar {
+  padding: 1rem;
+}
+
+.card-sidebar span {
+  padding: unset;
+  margin-bottom: unset;
+  line-height: normal;
+}
+
+.card-sidebar span h1 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.card-sidebar hr {
+  width: 85%;
+  height: 1px;
+  border: none;
+  background-color: var(--mainDarkGrey);
+}
+
 /* Animations */
 
 .nav-icon:hover {
@@ -293,7 +315,7 @@ main {
   box-shadow: 0 0 0.2rem #2f86ff;
 }
 
-.main_sidebar article:hover {
+.card-sidebar:hover {
   transform: unset;
   box-shadow: var(--cardDropShadow);
 }
