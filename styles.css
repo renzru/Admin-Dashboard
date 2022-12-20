@@ -111,9 +111,10 @@ input[type="search"] {
 }
 
 .main_header h1 {
-  line-height: 0;
-  font-size: 1.5rem;
+  color: var(--sidebarMainLight);
+  font-size: 1.25rem;
   font-weight: bold;
+  line-height: 0;
 }
 /* Sidebar */
 
