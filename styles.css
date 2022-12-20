@@ -152,6 +152,7 @@ input[type="search"] {
 
 .sidebar hr {
   height: 0.1rem;
+  margin: 0.75rem 0;
   background-color: var(--sidebarMainLight);
   border: none;
 }
